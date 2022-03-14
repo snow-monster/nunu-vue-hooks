@@ -17,6 +17,7 @@ function useTitle(title?: MaybeRef<string>, options?: UseTitleOptions) {
 		if (document.title !== title) document.title = title
 		return
 	}
+	document.title = title.value
 	watch(title, (val) => {
 		if (document.title !== val)  document.title = val
 	})
