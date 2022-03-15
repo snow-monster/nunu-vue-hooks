@@ -1,5 +1,5 @@
 import { reactive, onMounted, onUnmounted } from 'vue'
-const useWindowSize = () => {
+function useWindowSize() {
     const state = reactive({
         width: window.innerWidth,
         height: window.innerHeight
